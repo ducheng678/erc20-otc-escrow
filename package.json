@@ -1,0 +1,22 @@
+{
+  "name": "erc20-otc-escrow",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fixed-price ERC-20 OTC escrow with atomic on-chain settlement",
+  "license": "MIT",
+  "scripts": {
+    "build": "forge build",
+    "test": "forge test -vvv",
+    "test:gas": "forge test --gas-report"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "5.6.1"
+  },
+  "optionalDependencies": {
+    "@foundry-rs/forge-darwin-amd64": "1.7.1",
+    "@foundry-rs/forge-darwin-arm64": "1.7.1",
+    "@foundry-rs/forge-linux-amd64": "1.7.1",
+    "@foundry-rs/forge-linux-arm64": "1.7.1",
+    "@foundry-rs/forge-win32-amd64": "1.7.1"
+  }
+}
