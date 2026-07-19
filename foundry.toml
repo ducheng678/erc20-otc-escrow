@@ -8,6 +8,18 @@ evm_version = "cancun"
 optimizer = true
 optimizer_runs = 200
 
+[invariant]
+runs = 64
+depth = 64
+fail_on_revert = true
+show_metrics = true
+
+[profile.deep.invariant]
+runs = 128
+depth = 128
+fail_on_revert = true
+show_metrics = true
+
 [fmt]
 line_length = 100
 tab_width = 4
