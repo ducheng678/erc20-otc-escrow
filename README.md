@@ -14,7 +14,7 @@
 ## 安全设计
 
 - `SafeERC20` 兼容返回 `false` 或无返回值的常见 ERC-20 实现。
-- 五个状态变更入口均使用 `nonReentrant`。
+- 四个状态变更入口均使用 `nonReentrant`。
 - 所有结算路径遵循 Checks-Effects-Interactions。
 - 自定义 error 明确区分参数、权限、截止时间和状态机错误。
 - `allowedTaker` 为零地址时公开接单，否则仅指定地址可成交。
